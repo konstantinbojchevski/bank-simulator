@@ -1,0 +1,42 @@
+databaseChangeLog:
+  - changeSet:
+      id: LSJDV002-69_customerIdSequence
+      author: kbojchevski
+      changes:
+        - createSequence:
+            sequenceName: customer_id_sequence
+            incrementBy: 1
+            startValue: 1000000
+  - changeSet:
+      id: LSJDV002-69_customerTable
+      author: kbojchevski
+      changes:
+        - createTable:
+            tableName: customer
+            columns:
+              - column:
+                  name: customer_id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: customer_id_pk
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: surname
+                  type: varchar(255)
+              - column:
+                  name: email
+                  type: varchar(255)
+              - column:
+                  name: balance
+                  type: numeric
+              - column:
+                  name: suspense_balance
+                  type: numeric
+              - column:
+                  name: payment_network
+                  type: boolean

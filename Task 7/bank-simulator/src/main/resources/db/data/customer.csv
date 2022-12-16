@@ -1,0 +1,7 @@
+customer_id,customer_uuid,name,surname,email,balance,suspense_balance,payment_network,bank_id
+1,d0bd56d8-5ca2-469c-b4f8-9bac5e3d5e1e,"John","Doe","john.doe@gmail.com",876.53,332.13,true,3
+2,0e02ff72-960d-4615-b460-792f9ba81d17,"Janez","Novak","janez.novak@gmail.com",656.54,232.34,true,1
+3,97c97209-f45f-45ab-95b0-a84474c2a927,"Petar","Petrov","petar.petrov@gmail.com",4929.00,321.23,true,2
+4,fa6bc371-9304-4732-a57e-904735acda85,"Danny","Welbeck","danny.welbeck@gmail.com",5000.00,0,true,1
+5,82d04ebe-d7dc-4630-8f03-e549e2b5d184,"Max","Irving","max.irving@gmail.com",2000,0,true,2
+6,9b365aec-ec7d-48fa-9e24-9ae9c3cee43a,"Denis","Jordan","denis.jordan@gmail.com",677.54,224.34,false,2

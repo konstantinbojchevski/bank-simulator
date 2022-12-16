@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: LSJDV002-70_transactionAddingColumns
+      author: kbojchevski
+      changes:
+        - addColumn:
+            tableName: transaction
+            columns:
+              - column:
+                  name: customer_id
+                  type: bigint
+              - column:
+                  name: contact_id
+                  type: bigint
+              - column:
+                  name: transaction_uuid
+                  type: uuid
+  - changeSet:
+      id: LSJDV002-69_transactionData
+      author: kbojchevski
+      loadData:
+        tableName: transaction
+        file: db/data/transaction.csv

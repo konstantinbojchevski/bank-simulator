@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: LSJDV002-69_contactListIdSequence
+      author: kbojchevski
+      changes:
+        - createSequence:
+            sequenceName: contact_list_id_sequence
+            incrementBy: 1
+            startValue: 1000000
+  - changeSet:
+      id: LSJDV002-69_contactListTable
+      author: kbojchevski
+      changes:
+        - createTable:
+            tableName: contact_list
+            columns:
+              - column:
+                  name: contact_id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: contact_list_id_pk
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: email
+                  type: varchar(255)

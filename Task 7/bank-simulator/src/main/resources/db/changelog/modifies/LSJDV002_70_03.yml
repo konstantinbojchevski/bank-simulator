@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: LSJDV002-70_contactListAddingColumns
+      author: kbojchevski
+      changes:
+        - addColumn:
+            tableName: contact_list
+            columns:
+              - column:
+                  name: customer_id
+                  type: bigint
+              - column:
+                  name: contact_uuid
+                  type: uuid
+  - changeSet:
+      id: LSJDV002-69_contactListData
+      author: kbojchevski
+      loadData:
+        tableName: contact_list
+        file: db/data/contact_list.csv

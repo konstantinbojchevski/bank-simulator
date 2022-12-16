@@ -1,0 +1,4 @@
+bank_id,bank_uuid,bank_name,bank_bic,bank_country,bank_currency,payment_network
+1,15de7ff4-f10c-4330-9fc2-7803879566f7,"Nova Ljubljanska Banka","LJBASI2XXX","SI","EUR",true
+2,2222a1da-fbb3-4e45-bdbc-a1b7542ab36c,"Nova Kreditna Banka Maribor","NKBMSI22XXX","SI","EUR",true
+3,7c955d37-90b5-41d1-ad1e-49757a0420ac,"Barclays","BUKBGB22","GB","GBP",true

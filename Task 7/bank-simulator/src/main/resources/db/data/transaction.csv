@@ -1,0 +1,4 @@
+transaction_id,transaction_uuid,source_amount,source_currency,target_amount,target_currency,exchange_rate,status,date,customer_id,contact_id
+1,80eb1f63-f086-4625-a8c6-6bfd509d2204,99.03,"EUR",99.03,"EUR",1.0,"COMPLETED",2020-02-05,1,2
+2,ba639cd9-33f2-4163-94a4-e1bf785e44ec,3.34,"EUR",3.34,"EUR",1.0,"PENDING",2021-04-12,2,3
+3,c5e17dae-7600-4918-b416-42064e757e97,1321.00,"EUR",1233.00,"EUR",1.0,"PENDING",2022-06-21,3,1

@@ -1,0 +1,7 @@
+contact_id,contact_uuid,name,email,customer_id
+1,d79235b3-c24a-440d-a6f7-008e99c2f629,"Max Irving","max.irving@gmail.com",2
+2,12d7cf5b-0f42-471d-9e7e-9de8f51a2755,"Danny Welbeck","danny.welbeck@gmail.com",3
+3,02616d6e-b384-464c-9374-732b4365a7b9,"Janez Novak","janez.novak@gmail.com",1
+4,9fb3705a-825f-4b63-8617-c331eae40bfc,"John Doe","john.doe@gmail.com",2
+5,1bf229ae-04a6-49f7-adca-789c351061b8,"Danny Welbeck","danny.welbeck@gmail.com",1
+6,c9024691-7323-41cf-b51c-a2d752696c76,"Denis Jordan","denis.jordan@gmail.com",2

@@ -1,0 +1,39 @@
+databaseChangeLog:
+  - changeSet:
+      id: LSJDV002-69_bankIdSequence
+      author: kbojchevski
+      changes:
+        - createSequence:
+            sequenceName: bank_id_sequence
+            incrementBy: 1
+            startValue: 1000000
+  - changeSet:
+      id: LSJDV002-69_bankTable
+      author: kbojchevski
+      changes:
+        - createTable:
+            tableName: bank
+            columns:
+              - column:
+                  name: bank_id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: bank_id_pk
+                    nullable: false
+              - column:
+                  name: bank_name
+                  type: varchar(255)
+              - column:
+                  name: bank_bic
+                  type: varchar(255)
+              - column:
+                  name: bank_country
+                  type: varchar(255)
+              - column:
+                  name: bank_currency
+                  type: varchar(255)
+              - column:
+                  name: payment_network
+                  type: boolean

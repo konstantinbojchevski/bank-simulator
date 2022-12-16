@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: LSJDV002-70_customerAddingColumns
+      author: kbojchevski
+      changes:
+        - addColumn:
+            tableName: customer
+            columns:
+              - column:
+                  name: bank_id
+                  type: bigint
+              - column:
+                  name: customer_uuid
+                  type: uuid
+  - changeSet:
+      id: LSJDV002-69_customerData
+      author: kbojchevski
+      loadData:
+        tableName: customer
+        file: db/data/customer.csv

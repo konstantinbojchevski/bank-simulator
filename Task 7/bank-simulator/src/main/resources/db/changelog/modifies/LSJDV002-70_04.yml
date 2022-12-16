@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: LSJDV002-70_bankAddingColumns
+      author: kbojchevski
+      changes:
+        - addColumn:
+            tableName: bank
+            columns:
+              - column:
+                  name: bank_uuid
+                  type: uuid
+  - changeSet:
+      id: LSJDV002-69_bankData
+      author: kbojchevski
+      loadData:
+        tableName: bank
+        file: db/data/bank.csv
